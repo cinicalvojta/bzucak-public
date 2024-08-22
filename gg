@@ -1,0 +1,12 @@
+
+const int bzucak = 10;  // Define the pin number for the buzzer
+
+void setup() {
+  pinMode(bzucak, OUTPUT);  // Set the buzzer pin as an output
+}
+
+void loop() {
+  tone(bzucak, 440);  // Play a 440 Hz tone (A4 note)
+  delay(10000);  // Wait for 10 seconds
+  noTone(bzucak);  // Stop the tone after 10 seconds
+}
